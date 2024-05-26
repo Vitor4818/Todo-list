@@ -4,9 +4,14 @@ let listItems = []
 
 
 
-function addNovaTarefa(){
-    listItems.push(newTask.value)
-    console.log(listItems)
+function addNovaTarefa(event){
+
+    event.preventDefault() //Evitar da página ser atualizada ao clicar no botão
+    listItems.push(newTask.value) //Adiciona o item no array
+    console.log(listItems)//Exibe na tela uai
+    newTask.value = ''; // Limpa os campos
+
+
 }
 
 
