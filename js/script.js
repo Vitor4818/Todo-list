@@ -13,7 +13,7 @@ function carregarTarefas() { //carrega as tarefas do local storage
     }
 }
 
-// Função para salvar as tarefas no LocalStorage
+// salva as tarefas no LocalStorage
 function salvarLocalStorage() {
     localStorage.setItem('todoList', JSON.stringify(listItems));
 }
